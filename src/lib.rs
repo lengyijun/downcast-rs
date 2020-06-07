@@ -137,6 +137,10 @@
 //! }
 //! ```
 
+#![no_std]
+use std::prelude::v1::*;
+extern crate sgx_tstd as std;
+
 use std::any::Any;
 
 /// Supports conversion to `Any`. Traits to be extended by `impl_downcast!` must extend `Downcast`.
